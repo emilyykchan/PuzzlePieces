@@ -143,7 +143,7 @@ For the final public build, use the ZIP files attached to the GitHub Release.
 
 ## Licence
 
-Copyright (c) 2026 Emily Chan. All rights reserved.
+Copyright (c) 2021-2026 Emily Chan. All rights reserved.
 
 This repository is made publicly available for portfolio, educational, research, and archival purposes. Personal, educational, research, and evaluation use is permitted, but commercial use, redistribution, sublicensing, or publication of modified versions is not permitted without prior written permission.
 
