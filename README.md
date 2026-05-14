@@ -6,6 +6,24 @@ The Windows version supports contactless interaction using the **Leap Motion Con
 
 This repository contains the Unity project source files, configuration examples, and user instructions for running the Windows and Android builds.
 
+## Downloads
+
+The final public builds are available from the GitHub Releases page:
+
+```text
+https://github.com/emilyykchan/PuzzlePieces/releases
+```
+
+Recommended release assets:
+
+```text
+PuzzlePieces_Spanish_0420_Android.zip
+PuzzlePieces_Spanish_0420_Windows.zip
+```
+
+The Android ZIP contains the `.apk` and required data files (`NameList.json`, `Level.json`, and an example `Emily.json` record). The Windows ZIP contains the `.exe` and required Unity runtime/data files.
+
+
 ## Project overview
 
 Puzzle Pieces was developed as an interactive puzzle game with two main deployment modes:
@@ -33,7 +51,7 @@ PuzzlePieces/
 │   	├── PuzzlePieces_Spanish.apk      # legacy APK
 │   	└── README.md
 │   └── Windows/
-│   	├── PuzzlePieces_Spanish_0420.zip # Contains exe and data 
+│   	├── PuzzlePieces_Spanish_0420.zip # legacy EXE and data
 │   	└── README.md
 ├── README.md
 └── .gitignore
