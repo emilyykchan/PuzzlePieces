@@ -1,11 +1,11 @@
-# Unity generated files
+# Unity generated folders
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
-# Visual Studio / Rider / VS Code local files
+# IDE / generated project files
 .vs/
 .vscode/
 .idea/
