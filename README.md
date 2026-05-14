@@ -1,10 +1,11 @@
 # Puzzle Pieces
 
-**Puzzle Pieces** is a Unity-based educational puzzle game designed for both contactless gesture interaction and touch-screen interaction.
+**Puzzle Pieces** is a Unity-based educational puzzle game with two interaction modes:
 
-The Windows version supports contactless interaction using the **Leap Motion Controller**, while the Android version is operated using touch input. The game includes multiple puzzle levels, different play modes, player selection, level progression, and performance-record pages.
+- **Windows version** — contactless gesture interaction using the Leap Motion Controller.
+- **Android version** — touch-screen interaction.
 
-This repository contains the Unity project source files, configuration examples, and user instructions for running the Windows and Android builds.
+The game includes multiple puzzle levels, different play modes, player selection, level progression, and performance-record pages.
 
 ## Downloads
 
@@ -21,17 +22,42 @@ PuzzlePieces_Spanish_0420_Android.zip
 PuzzlePieces_Spanish_0420_Windows.zip
 ```
 
-The Android ZIP contains the `.apk` and required data files (`NameList.json`, `Level.json`, and an example `Emily.json` record). The Windows ZIP contains the `.exe` and required Unity runtime/data files.
+The Android ZIP contains the `.apk` and required data files:
 
+```text
+PuzzlePieces_Spanish_0420.apk
+NameList.json
+Level.json
+Emily.json
+```
 
-## Project overview
+The Windows ZIP contains the `.exe` and required Unity runtime/data files.
 
-Puzzle Pieces was developed as an interactive puzzle game with two main deployment modes:
+## Screenshots
 
-- **Windows PC version** — designed for Leap Motion gesture-based interaction.
-- **Android version** — designed for tablet touch-screen interaction.
+### Home screen
 
-The game uses JSON configuration files to define built-in players and level information. During gameplay, individual player records are saved as JSON files and used by the performance/record pages.
+![Home screen](docs/images/home-screen.jpg)
+
+### Level and difficulty selection
+
+![Level selection](docs/images/level-selection.jpg)
+
+![Difficulty selection](docs/images/difficulty-selection.jpg)
+
+### Gameplay
+
+![Gameplay](docs/images/gameplay.jpg)
+
+![Copy mode](docs/images/copy-mode.jpg)
+
+### Gesture interaction
+
+![Gesture interaction](docs/images/gesture.jpg)
+
+### Performance records
+
+![Performance page](docs/images/performance.jpg)
 
 ## Repository structure
 
@@ -40,36 +66,37 @@ PuzzlePieces/
 ├── Assets/              Unity assets, scenes, scripts, prefabs, audio, and sprites
 ├── Packages/            Unity package manifest
 ├── ProjectSettings/     Unity project settings
-├── docs/                User documentation and example configuration files
-│   ├── android.md       Android installation and usage guide
-│   ├── windows.md       Windows installation and usage guide
-│   └── config/          Example JSON configuration and record files
-├── Builds/ 
-│   └── Android/
-│   	├── PuzzlePieces.apk              # legacy APK
-│   	├── PuzzlePieces_EN.apk           # legacy APK
-│   	├── PuzzlePieces_Spanish.apk      # legacy APK
-│   	└── README.md
-│   └── Windows/
-│   	├── PuzzlePieces_Spanish_0420.zip # legacy EXE and data
-│   	└── README.md
+├── Builds/              Legacy/demo build files and build notes
+├── docs/                User documentation, screenshots, and example config files
 ├── README.md
+├── LICENSE
 └── .gitignore
 ```
 
-## Main Unity folders
+The core Unity project files are:
 
 ```text
-Assets/Scenes/             Game scenes, level scenes, menu pages, and record pages
-Assets/Scripts/            Core C# scripts for game logic, UI, saving/loading, and records
-Assets/Prefabs/            Reusable Unity prefabs
-Assets/Sprites/            Game images, UI graphics, buttons, icons, and puzzle assets
-Assets/Audio/              Music and sound effects
-Assets/LeapMotion/         Leap Motion integration assets
-Assets/LeapMotionModules/  Leap Motion UI/input modules
+Assets/
+Packages/
+ProjectSettings/
 ```
 
-## Configuration files
+Unity-generated folders such as `Library/`, `Temp/`, `Obj/`, IDE files, and `.DS_Store` files are intentionally excluded from Git.
+
+## Documentation
+
+Detailed usage instructions are provided in:
+
+```text
+docs/android.md
+docs/windows.md
+```
+
+The Android guide explains how to install the APK and copy the required JSON configuration files into the Android app data folder.
+
+The Windows guide explains how to launch the Windows build and use the Leap Motion Controller.
+
+## Configuration and records
 
 The game uses two main configuration files:
 
@@ -81,113 +108,45 @@ Assets/Level.json
 - `NameList.json` contains the built-in player list.
 - `Level.json` contains game level information.
 
-Example copies are also provided in:
+Example copies are provided in:
 
 ```text
 docs/config/NameList.example.json
 docs/config/Level.example.json
 ```
 
-Player performance records are saved as individual JSON files, usually named after the player, for example:
+During gameplay, player performance records are saved as individual JSON files:
 
 ```text
 {name}.json
 ```
 
-Example anonymised record files are provided in:
+Anonymised sample record files are provided in:
 
 ```text
 docs/config/sample-records/
 ```
 
-These files show the structure of the saved performance data used by the record/performance pages.
+These examples show the structure of the saved performance data used by the record/performance pages.
 
-## Running the project in Unity
+## Legacy builds
 
-Open this repository as a Unity project.
-
-The core Unity project files are:
+This repository retains older Android APK builds in:
 
 ```text
-Assets/
-Packages/
-ProjectSettings/
+Builds/Android/
 ```
 
-Unity-generated folders such as `Library/`, `Temp/`, `Obj/`, and IDE files are intentionally excluded from Git.
+These files are kept for archival purposes and may not represent the final version of the project.
 
-## Windows version
-
-The Windows version is designed for use with the Leap Motion Controller.
-
-Basic usage:
-
-1. Unzip the Windows build folder.
-2. Open the `.exe` file.
-3. In the Unity launch configuration window, set the screen resolution to `1280 × 800`.
-4. Click **Play**.
-5. Connect the Leap Motion Controller to interact with the game.
-
-For more details, see:
-
-```text
-docs/windows.md
-```
-
-## Android version
-
-The Android version uses touch-screen interaction.
-
-Basic usage:
-
-1. Install the `.apk` file on the Android device.
-2. Copy `NameList.json` and `Level.json` into the app data folder.
-3. Optionally copy an example user record JSON file to demonstrate completed progress.
-
-For more details, see:
-
-```text
-docs/android.md
-```
-
-## Build downloads
-
-Pre-built Windows and Android versions should be provided through the repository's GitHub Releases page.
-
-Recommended release assets:
-
-```text
-PuzzlePieces_Windows.zip
-PuzzlePieces_Android.apk
-```
-
-or:
-
-```text
-PuzzlePieces_Android.zip
-```
-
-if the Android release also includes configuration files.
-
-## Notes on generated files
-
-The following should not be committed to the repository:
-
-```text
-Library/
-Temp/
-Obj/
-Build/
-Builds/
-.vs/
-.vscode/
-*.sln
-*.csproj
-.DS_Store
-```
-
-These are generated by Unity, the operating system, or the local development environment.
+For the final public build, use the ZIP files attached to the GitHub Release.
 
 ## Licence
 
-Licence information should be added here before public release.
+Copyright (c) 2026 Emily Chan. All rights reserved.
+
+This repository is made publicly available for portfolio, educational, research, and archival purposes. Personal, educational, research, and evaluation use is permitted, but commercial use, redistribution, sublicensing, or publication of modified versions is not permitted without prior written permission.
+
+See `LICENSE` for details.
+
+Third-party Unity assets, packages, fonts, audio files, plugins, and libraries remain subject to their original licences and terms.
