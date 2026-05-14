@@ -26,6 +26,11 @@ PuzzlePieces/
 │   ├── android.md       Android installation and usage guide
 │   ├── windows.md       Windows installation and usage guide
 │   └── config/          Example JSON configuration and record files
+├── Builds/ 
+│   ├── PuzzlePieces.apk              # legacy APK
+│   ├── PuzzlePieces_EN.apk           # legacy APK
+│   ├── PuzzlePieces_Spanish.apk      # legacy APK
+│   └── README.md
 ├── README.md
 └── .gitignore
 ```
