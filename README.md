@@ -27,10 +27,14 @@ PuzzlePieces/
 │   ├── windows.md       Windows installation and usage guide
 │   └── config/          Example JSON configuration and record files
 ├── Builds/ 
-│   ├── PuzzlePieces.apk              # legacy APK
-│   ├── PuzzlePieces_EN.apk           # legacy APK
-│   ├── PuzzlePieces_Spanish.apk      # legacy APK
-│   └── README.md
+│   └── Android/
+│   	├── PuzzlePieces.apk              # legacy APK
+│   	├── PuzzlePieces_EN.apk           # legacy APK
+│   	├── PuzzlePieces_Spanish.apk      # legacy APK
+│   	└── README.md
+│   └── Windows/
+│   	├── PuzzlePieces_Spanish_0420.zip # Contains exe and data 
+│   	└── README.md
 ├── README.md
 └── .gitignore
 ```
