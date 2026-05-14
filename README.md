@@ -37,27 +37,27 @@ The Windows ZIP contains the `.exe` and required Unity runtime/data files.
 
 ### Home screen
 
-![Home screen](docs/images/home-screen.jpg)
+<img src="docs/images/home-screen.jpg" alt="Home screen" width="600">
 
-### Level and difficulty selection
+### Level selection and gameplay
 
-![Level selection](docs/images/level-selection.jpg)
+<p>
+  <img src="docs/images/level-selection.jpg" alt="Level selection" width="45%">
+  <img src="docs/images/difficulty-selection.jpg" alt="Difficulty selection" width="45%">
+</p>
 
-![Difficulty selection](docs/images/difficulty-selection.jpg)
+<p>
+  <img src="docs/images/gameplay.jpg" alt="Gameplay" width="45%">
+  <img src="docs/images/copy-mode.jpg" alt="Copy mode" width="45%">
+</p>
 
-### Gameplay
+### Gesture interaction and performance records
 
-![Gameplay](docs/images/gameplay.jpg)
+<p>
+  <img src="docs/images/gesture.jpg" alt="Gesture interaction" width="45%">
+  <img src="docs/images/performance.jpg" alt="Performance page" width="45%">
+</p>
 
-![Copy mode](docs/images/copy-mode.jpg)
-
-### Gesture interaction
-
-![Gesture interaction](docs/images/gesture.jpg)
-
-### Performance records
-
-![Performance page](docs/images/performance.jpg)
 
 ## Repository structure
 
